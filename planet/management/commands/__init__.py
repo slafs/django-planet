@@ -167,7 +167,7 @@ def process_feed(feed_url, create=False, category_title=None):
                 title = entry.get("title", "")
                 url = entry.get("link")
                 guid = entry.get("link")
-                content = entry.get('description') or entry.get("content", [{"value": ""}])[0]["value"]
+                content = entry.get("content", [{"value": ""}])[0]["value"] or entry.get('description')
                 comments_url = entry.get("comments")
                 date_modified = entry.get("updated_parsed") or\
                     entry.get("published_parsed")
