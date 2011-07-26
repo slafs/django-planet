@@ -30,3 +30,5 @@ settings_local.py
 
 ##PyCharm
 .idea
+sample_project/local_settings.py
+sample_project/planet.db
